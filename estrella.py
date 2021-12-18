@@ -4,12 +4,18 @@ from turtle import *
 def stars(x1,y1):
     color('white') # color of the star 
     goto(x1,y1)
-    color('blue') # color of the star 
-    for i in range(0,9):
+    color('green') # color of the star 
+    if a in h: # color change
+        color('orange')  
+        for i in range(0,9):
+            forward(100)
+            left (160)
+    else:
+        for i in range(0,9):
             forward(100)
             left (160)
             
-
+# X position
 def movementx():
     x2 = float(random.randint(-200,200))
    
@@ -18,7 +24,7 @@ def movementx():
       
     return x2
 
-
+# Y position
 def movementy():
     y2 = float(random.randint(-200,200))
    
@@ -30,15 +36,16 @@ def movementy():
 
 x = 0.00
 y = 0.00
-
+h = [1, 3]
 a = 0
 while a != 5:
      
     stars(x,y)
     x = movementx()
     y = movementy()
-    print(x)
+  
     a = a + 1
+    
     
     
 
