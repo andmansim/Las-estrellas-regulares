@@ -1,7 +1,10 @@
 from turtle import *
-color('green', 'blue')  #colores de la estrella
-begin_fill()  # para empezar a dibujar
+color('blue')  #color de la estrella
 
-forward(100)
-end_fill() # para terminar
+while True:
+    forward(100)
+    left (160)
+    if abs(pos()) < 1: # para que pare
+        break
+
 done()
