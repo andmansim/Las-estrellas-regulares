@@ -9,19 +9,25 @@ def stars(x1,y1):
             forward(100)
             left (160)
             
-'''
-def movement(x2, y2):
-    if (x2, y2) == (90.00, 90.00):
-        x2 = -x2
-        y2 = y2
-    elif (x2, y2) == (-90.00, 90.00):
-        x2 = -x2
-        y2 = -y2
-    elif (x2, y2) == (-90.00, -90.00):
-        x2 = x2
-        y2 = -y2
-    return x2, y2
-'''
+
+def movementx():
+    x2 = float(random.randint(-200,200))
+   
+    if 0 < x2 < 100:
+        x2 = x2 + 110
+      
+    return x2
+
+
+def movementy():
+    y2 = float(random.randint(-200,200))
+   
+    if 0 < y2 < 100:
+        y2 = y2 + 110
+      
+    return y2
+
+
 x = 0.00
 y = 0.00
 
@@ -29,22 +35,9 @@ a = 0
 while a != 5:
      
     stars(x,y)
-    #movement(x,y)
-    if (x,y) == (0.00, 0.00):
-        x = 90.00
-        y = 90.00
-    elif (x, y) == (90.00, 90.00):
-        x = -x
-        y = y
-    elif (x, y) == (-90.00, 90.00):
-        x = x
-        y = -y
-    elif (x, y) == (-90.00, -90.00):
-        x = -x
-        y = y
-    
-
-    
+    x = movementx()
+    y = movementy()
+    print(x)
     a = a + 1
     
     
