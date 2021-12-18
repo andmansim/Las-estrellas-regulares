@@ -1,12 +1,12 @@
 import random
 from turtle import *
-color('blue')  # color de la estrella
+color('blue')  # color of the star 
 
 def stars():
     while True:
             forward(100)
             left (160)
-            if abs(pos()) < 1: # para que pare
+            if abs(pos()) < 1: # stop drawing
                 break
-    done() # terminar
+    done() # finished
 stars()
