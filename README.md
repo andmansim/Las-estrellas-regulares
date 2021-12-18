@@ -1,6 +1,6 @@
 # Las-estrellas-regulares
 
-Hemos hecho un proyecto que consiste en crear estrellas de nueve puntas. Su dirección de GitHub es la siguiente:[GitHub](https://github.com/andmansim/Las-estrellas-regulares.git)
+Hemos hecho un proyecto que consiste en crear estrellas de nueve puntas. Mi dirección de GitHub es la siguiente:[GitHub](https://github.com/andmansim/Las-estrellas-regulares.git)
 
 https://github.com/andmansim/Las-estrellas-regulares.git
 
